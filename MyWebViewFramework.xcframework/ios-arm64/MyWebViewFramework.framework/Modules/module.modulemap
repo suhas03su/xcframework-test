@@ -1,0 +1,11 @@
+framework module MyWebViewFramework {
+  umbrella header "MyWebViewFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module MyWebViewFramework.Swift {
+    header "MyWebViewFramework-Swift.h"
+    requires objc
+}

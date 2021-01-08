@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController" customModule="MyWebViewFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="headerLabel" destination="xss-rM-tPa" id="OSO-ej-18g"/>
+                <outlet property="headerView" destination="kvK-y5-SuX" id="OZa-iP-4kw"/>
+                <outlet property="headerViewHeightConstraint" destination="67K-V2-etv" id="qan-rG-uEa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="zqU-uz-AHA" id="p95-Tq-8io"/>
+                <outlet property="webViewTopConstraint" destination="gsn-f6-TlF" id="7Wc-gO-mde"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqU-uz-AHA">
+                    <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvK-y5-SuX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xss-rM-tPa">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="xss-rM-tPa" firstAttribute="centerY" secondItem="kvK-y5-SuX" secondAttribute="centerY" id="17H-0M-fN2"/>
+                        <constraint firstItem="xss-rM-tPa" firstAttribute="top" secondItem="kvK-y5-SuX" secondAttribute="top" id="1TL-tu-ZfJ"/>
+                        <constraint firstItem="xss-rM-tPa" firstAttribute="centerX" secondItem="kvK-y5-SuX" secondAttribute="centerX" id="5nJ-aD-OIn"/>
+                        <constraint firstAttribute="height" constant="40" id="67K-V2-etv"/>
+                        <constraint firstAttribute="trailing" secondItem="xss-rM-tPa" secondAttribute="trailing" id="AkQ-lu-ZI8"/>
+                        <constraint firstAttribute="bottom" secondItem="xss-rM-tPa" secondAttribute="bottom" id="cn0-IO-a5D"/>
+                        <constraint firstItem="xss-rM-tPa" firstAttribute="leading" secondItem="kvK-y5-SuX" secondAttribute="leading" id="soZ-ud-aWs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="zqU-uz-AHA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1ab-N6-ziA"/>
+                <constraint firstItem="kvK-y5-SuX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="209-Nr-NPC"/>
+                <constraint firstItem="kvK-y5-SuX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="S99-XJ-BLn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zqU-uz-AHA" secondAttribute="trailing" id="VT5-cF-CRq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kvK-y5-SuX" secondAttribute="trailing" id="VeU-EC-lpf"/>
+                <constraint firstItem="zqU-uz-AHA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="gsn-f6-TlF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zqU-uz-AHA" secondAttribute="bottom" id="hfb-ag-rei"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-509" y="138"/>
+        </view>
+    </objects>
+</document>
